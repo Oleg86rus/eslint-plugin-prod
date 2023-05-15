@@ -1,7 +1,3 @@
-/**
- * @fileoverview feature sliced relative path checker
- * @author oleg
- */
 "use strict";
 
 const rule = require("../../../lib/rules/path-checker"),
@@ -10,6 +6,7 @@ const rule = require("../../../lib/rules/path-checker"),
 const ruleTester = new RuleTester({
   parserOptions: {ecmaVersion: 6, sourceType: 'module'}
 });
+
 ruleTester.run("path-checker", rule, {
   valid: [
     {
